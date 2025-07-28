@@ -2,3 +2,10 @@
   font-family: Old-London;
   src: url('Fonts/old-london/OldLondon.ttf');
 }
+@font-face {
+  font-family: Runescape;
+  src: url('Fonts/osrs/runescape.ttf');
+}
+body {
+  font-family: Runescape;
+}
