@@ -10,15 +10,25 @@
 body {
   background-color: black;
   color: white;
+  padding: 0;
+  margin: 0;
 }
-
 .text-center {
   text-align: center;
 }
-
-.column {
-  float: left;
+.container {
+  display: flex;
+  flex-direction: column;
   height: 100%;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.column {
+  height: 100%;
+  padding: 10px;
 }
 .left,
 .right {
@@ -36,7 +46,21 @@ body {
   clear: both;
 }
 
+.btn {
+  border: 5px solid rgb(112, 0, 0);
+  background-color: rgb(112, 0, 0);
+  color: black;
+  font-family: Old-London;
+  font-size: 25px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: black;
+  color: rgb(112, 0, 0);
+}
+
 #nav-bar {
+  overflow: hidden;
   max-width: 100%;
   border: 20px solid;
   border-color: rgb(112, 0, 0);
