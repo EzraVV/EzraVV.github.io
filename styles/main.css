@@ -6,6 +6,48 @@
   font-family: Runescape;
   src: url('Fonts/osrs/runescape.ttf');
 }
+
 body {
+  background-color: black;
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.column {
+  float: left;
+  height: 100%;
+}
+.left,
+.right {
+  width: 25%;
+  background-image: url('../images/nuke.gif');
+  background-position: center;
+  background-size: cover;
+}
+.middle {
+  width: 50%;
+}
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#nav-bar {
+  max-width: 100%;
+  border: 20px solid;
+  border-color: rgb(112, 0, 0);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Old-London;
+}
+p {
   font-family: Runescape;
 }
