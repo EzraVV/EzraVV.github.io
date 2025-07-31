@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Borders, Padding & Margins</title>
+    <title>Margins, Borders & Padding</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../styles/main.css" rel="stylesheet" type="text/css" />
@@ -12,7 +12,7 @@
         <a href="/blog/te-houtaewa-template.html" class="btn"
           >Te-Houtaewa Template</a
         >
-        <a href="/blog/html-css.html" class="btn">Borders, Padding & Margins</a>
+        <a href="/blog/html-css.html" class="btn">Margins, Borders & Padding</a>
       </div>
       <div class="row">
         <div class="column left text-center">
@@ -20,10 +20,28 @@
         </div>
         <div class="column middle text-center">
           <img src="/images/judaslogo.png" alt="logo" class="logo" />
-          <h1 class="offset">Borders, Padding & Margins</h1>
-          <h2 class="offset">What is the difference? </br>What are the use cases?</h2>
-          <p></p>
-          <p></p>
+          <h1 class="offset">Margins, Borders & Padding</h1>
+          <h2 class="offset">What is the difference? </br>What are some examples?</h2>
+          <b>Margin</b>
+          <p>I am going to break down each of these parts individually starting from the outermost component.</br>
+          The margin sets a space around the edge of the border as a buffer zone, it acts like an invisible force bubble. This cannot be visually styled outside of sizing of the space it takes. </br>
+          The margin can have a blanket value or different values for all sides being top, left, bottom, and right. This value can be in different forms, px (pixel), and % are the more common uses.</br> 
+          Below is an example of the code in an inline format:</p>
+          <pre>&lt;p style="margin-left: 20%; margin-right: 20%; background-color: rgb(112, 0, 0);"&gt;this is an example&lt;/p&gt;</pre><p style="margin-left: 20%; margin-right: 20%; background-color: rgb(112, 0, 0);">this is an example</p></br>
+
+          <b>Border</b>
+          <p>The border is the outline of the "box", it is the visual representation of the outer layer of your content. you can style this in many ways. </br>
+            An example is using a "border-radius: 50%;" to give your "box" a circle shape. you can also colour your border.</br> 
+            Like mentioned above for margin, you can have different values for each side or a general blanket value, this also applies for padding. </br>
+            Below is an example of the code in an inline format:</p>
+          <pre>&lt;p style="border: 5px solid rgb(112, 0, 0);"&gt;this is an example&lt;/p&gt;</pre><p style="border: 5px solid rgb(112, 0, 0);">this is an example</p></br>
+
+          <b>Padding</b>
+          <p>The padding around content is the space between the content and the border. Just like the margin, this is invisible and cannot be styled outside of its size.</br> 
+            Below is an example of the code in an inline format:</p>
+          <pre>&lt;p style="padding: 20px; border: 2px solid white; background-color: rgb(112, 0, 0);"&gt;this is an example&lt;/p&gt;</pre><p style="padding: 20px; border: 2px solid white; background-color: rgb(112, 0, 0);">this is an example</p>
+
+
         </div>
         <div class="column right text-center">
           <!-- <h2>column 3</h2> -->

@@ -89,7 +89,23 @@ h1 {
   /* position: relative;
   top: -11%; */
 }
+h2 {
+  font-size: 30px;
+  /* position: relative;
+  top: -11%; */
+}
+h3 {
+  font-size: 25px;
+  /* position: relative;
+  top: -11%; */
+}
 
 p {
   font-family: Runescape;
+  font-size: 18px;
+}
+
+b {
+  font-family: Runescape;
+  font-size: 20px;
 }
