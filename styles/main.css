@@ -46,10 +46,17 @@ body {
   clear: both;
 }
 
+.scrollbar {
+  overflow: auto;
+}
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 .logo {
   width: 15%;
   position: relative;
-  top: -11%;
+  /* top: -11%; */
 }
 
 .btn {
@@ -109,6 +116,10 @@ h3 {
 }
 
 p {
+  font-family: Runescape;
+  font-size: 18px;
+}
+ul {
   font-family: Runescape;
   font-size: 18px;
 }
