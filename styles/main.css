@@ -20,7 +20,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100% - 103px);
 }
 .row {
   display: flex;
@@ -78,13 +78,17 @@ body {
 }
 
 #nav-bar {
-  margin-top: 1.5%;
+  /* margin-top: 1.5%; */
   overflow: hidden;
   max-width: 100%;
   border: 10px solid;
   border-color: rgb(112, 0, 0);
   /* position: fixed;
   background-color: black; */
+}
+
+.all {
+  height: 100vh;
 }
 
 #foot {
