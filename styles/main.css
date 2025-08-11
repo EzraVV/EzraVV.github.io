@@ -7,6 +7,14 @@
   src: url('Fonts/osrs/runescape.ttf');
 }
 
+.content-box {
+  border: 5px solid black;
+  background-color: black;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+}
+
 body {
   background-color: black;
   color: white;
