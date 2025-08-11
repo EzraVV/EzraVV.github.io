@@ -15,6 +15,38 @@
   border-radius: 50%;
 }
 
+#invert-logo {
+  border: 5px solid black;
+  background-image: url(../images/judasprehover.png);
+  background-size: cover;
+  width: 10vw;
+  height: 10vw;
+}
+
+#invert-logo:hover {
+  background-image: url(../images/JudasHover.png);
+  width: 10vw;
+  height: 10vw;
+}
+
+.logo-btn {
+  display: inline-block;
+}
+
+a.btn-logo:link,
+a.btn-logo:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.center-shadow-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
 body {
   background-color: black;
   color: white;
@@ -114,6 +146,10 @@ h2,
 h3,
 h4 {
   font-family: Old-London;
+}
+
+h4 {
+  font-size: 20px;
 }
 
 h1 {
