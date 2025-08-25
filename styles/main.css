@@ -159,6 +159,17 @@ a.btn-logo:visited {
 
 /* ----------------------------------------------------------------- */
 
+/* -------------------Code Example Styles----------------------------- */
+
+.codeExample {
+  border: 2px solid rgb(88, 88, 88);
+  padding: 10px;
+  background-color: rgb(33, 33, 33);
+  color: rgb(0, 255, 0);
+}
+
+/* ------------------------------------------------------------------ */
+
 /* -------------------General Styles-------------------------- */
 .content-box {
   border: 5px solid black;
@@ -228,6 +239,6 @@ ul {
 
 b {
   font-family: Runescape;
-  font-size: 20px;
+  font-size: 22px;
 }
 /* ---------------------------------------------- */
