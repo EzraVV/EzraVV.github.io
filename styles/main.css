@@ -85,7 +85,7 @@ a.btn-logo:visited {
 .container {
   display: flex;
   flex-direction: column;
-  height: calc(100% - 54px);
+  height: calc(100% - 103px);
 }
 .row {
   display: flex;
