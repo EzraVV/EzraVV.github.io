@@ -7,12 +7,10 @@ function myFirstClick() {
   } else {
     message = 'Hello Again!'
   }
-  let myButton = document.getElementById('myButton')
-  myButton.addEventListener('click', function () {
-    user = 'old'
-  })
+
   document.getElementById('welcomeMessage').innerHTML = message
   document.getElementById('myButton').onclick = mySecondClick
+  document.getElementById('removeButton').onclick = removeText
 }
 
 function mySecondClick() {
@@ -23,6 +21,11 @@ function mySecondClick() {
     message = 'Hello Again!'
   }
   document.getElementById('welcomeMessage').innerHTML = message
+  document.getElementById('removeButton').onclick = removeText
 }
 
-const coffee = ['latte', 'flat white', 'long black']
+function removeText() {
+  let thirdClick = ' '
+  document.getElementById('welcomeMessage').innerHTML = thirdClick
+  document.getElementById('removeButton').onclick = removeText
+}

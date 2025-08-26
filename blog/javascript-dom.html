@@ -10,19 +10,6 @@
 
   <body>
     <div class="all">
-      <div id="nav-bar">
-        <a href="/" class="btn">Home</a>
-        <a href="/blog/html-css.html" class="btn">Margins, Borders & Padding</a>
-        <a href="/blog/te-houtaewa-template.html" class="btn"
-          >Te-Houtaewa Template</a
-        >
-        <a href="/blog/identity-values.html" class="btn">Identity & Values</a>
-        <a href="/blog/learning-plan.html" class="btn">Learning Plan</a>
-        <a href="/blog/emotional-intelligence.html" class="btn"
-          >Emotional Intelligence</a
-        >
-        <a href="/blog/javascript-dom.html" class="btn">Javascript & DOM</a>
-      </div>
       <div class="container">
         <div class="row">
           <div class="column left text-center">
@@ -30,7 +17,12 @@
             <!-- <div style="background-color: black; margin-top: 50%;"></div> -->
           </div>
           <div class="column middle scrollbar text-center">
-            <img src="/images/judaslogo.png" alt="logo" class="logo" />
+            <a href="../index.html" class="logo-btn btn-logo"
+              ><div id="alt-logo">
+                <div class="logobg"></div>
+                <h4 class="center-shadow-text">Return Home</h4>
+              </div></a
+            >
             <h1>Javascript & the DOM</h1>
             <b>Relationship of Javascript with HTMl and CSS</b>
             <p>
@@ -56,7 +48,7 @@
                 (if) runs a part of the code and checks if that is true or false if it is false (else) will run.</p>
                 <div class="codeExample">
                 <p id="welcomeMessage"></p>
-              <button id="myButton" onclick="myFirstClick()">Click Me</button></br>
+              <button id="myButton" onclick="myFirstClick()" class="btn">Click Me</button><button id="removeButton" onclick="myFirstClick()" class="btn">Remove Text</button></br>
             </br></br>
               <img src="../images/ifelse.png" style="width: 60%;"></img>
 
@@ -78,7 +70,7 @@
                 it allows you to see the html, css and also network related queries. It has a built in terminal that allows you to use java script to edit and select 
                 different parts of the web page.</p>
               
-              <img src="../images/using_the_w3c_dom_level_1_core-doctree.jpg" style="width: 40%;" class="codeExample"></img></br>
+              <img src="../images/using_the_w3c_dom_level_1_core-doctree.jpg" style="width: 40%;" class="codeExample"></img></br></br></br>
               <b>Why would you use the DOM?</b>
               <p>You would use it to make quick live changes to your css and html on the go (it is not perminant and will disapear on page refresh) 
                 but allows you to play around with finding what works so you can make the changes in you code later. It also allows you to select different events 
@@ -94,7 +86,7 @@
               <p>Arrays and objects are data that can be stored, updated and called on using javascript. Arrays are containers than can contain 
                 multiple different sets of data, they are defined using [ ] these square brackets and there positioning numbers start at 0. 
                 Objects are data values that typically are  only one but inside an object you can have other different objects.</p><div class="codeExample">
-              <img src="../images/array.png" style="width: 40%;"></br></img><p>in this array the console log would output "Flat White" as it is in position [1]</p></br></div>
+              <img src="../images/array.png" style="width: 40%;"></br></img><p>in this array the console log would output "Flat White" as it is in position [1]</p></br></div></br></br>
               <b>Functions</b>
               <p>Functions are different executable chunks of code that do certain things that can be called on as many times as you want, 
                 they can ignore the control flow, but also are vital to holding data that can be used to call and run that chunk of code in the flow of execution.</p>
