@@ -29,3 +29,29 @@ function removeText() {
   document.getElementById('welcomeMessage').innerHTML = thirdClick
   document.getElementById('removeButton').onclick = removeText
 }
+
+// ------ RGB Text ------ //
+
+const rgbText = document.getElementById('rgbText')
+let r = 255,
+  g = 0,
+  b = 0
+let cycle = 0
+
+function cycleColor() {
+  if (cycle === 0) {
+    if (g < 255) g++
+    else cycle = 1
+  } else if (cycle === 1) {
+    if (r > 0) r--
+    else if (b < 255) b++
+    else cycle = 2
+  } else if (cycle === 2) {
+    if (g > 0) g--
+    else if (r < 255) r++
+    else cycle = 0
+  }
+  rgbText.style.color = `rgb(${r}, ${g}, ${b})`
+}
+
+setInterval(cycleColor, 10)

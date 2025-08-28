@@ -139,6 +139,33 @@ a.btn-logo:visited {
   border-radius: 50%;
 }
 
+a.lnk:link,
+a.lnk:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+#rgbText {
+  font-weight: bold;
+  text-align: center;
+  animation: rgbCycle 5s infinite alternate;
+}
+
+@keyframes rgbCycle {
+  0% {
+    color: rgb(255, 0, 0);
+  }
+  33% {
+    color: rgb(0, 255, 0);
+  }
+  66% {
+    color: rgb(0, 0, 255);
+  }
+  100% {
+    color: rgb(255, 0, 0);
+  }
+}
+
 /* ----------------------------------------------------------- */
 
 /* --------------------Navigation Bar Top----------------------- */
@@ -248,6 +275,7 @@ p {
 ul {
   font-family: Runescape;
   font-size: 18px;
+  list-style-type: none;
 }
 
 b {
