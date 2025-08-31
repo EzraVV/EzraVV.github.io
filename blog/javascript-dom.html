@@ -1,121 +1,143 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ezra's Blog</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
-    <script src="../scripts/scripts.js"></script>
-  </head>
 
-  <body>
-    <div class="all">
-      <div id="nav-bar">
-        <a href="/" class="btn">Home</a>
-        <a href="/blog/html-css.html" class="btn">Margins, Borders & Padding</a>
-        <a href="/blog/te-houtaewa-template.html" class="btn"
-          >Te-Houtaewa Template</a
-        >
-        <a href="/blog/identity-values.html" class="btn">Identity & Values</a>
-        <a href="/blog/learning-plan.html" class="btn">Learning Plan</a>
-        <a href="/blog/emotional-intelligence.html" class="btn"
-          >Emotional Intelligence</a
-        >
-        <a href="/blog/javascript-dom.html" class="btn">Javascript & DOM</a>
-        <a href="/blog/neuroplasticity.html" class="btn">Neuroplasticity</a>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="column left text-center">
-            <!-- <h2>column 1</h2> -->
-            <!-- <div style="background-color: black; margin-top: 50%;"></div> -->
-          </div>
-          <div class="column middle scrollbar text-center">
-            <a href="../index.html" class="logo-btn btn-logo"
-              ><div id="alt-logo">
-                <div class="logobg"></div>
-                <h4 class="center-shadow-text">Return Home</h4>
-              </div></a
-            >
-            <h1>Javascript & the DOM</h1>
-            <b>Relationship of Javascript with HTMl and CSS</b>
-            <p>
-              The way Javascript interacts with HTML and CSS is really
-              fascinating, HTML is like the core structure of a webpage its your
-              paragraphs, your headings, and all your different containers. CSS
-              is the flesh of a webpage, it's how things look, how they are
-              styled and even how they interact with certain changes (like a
-              hover over a button). Javascript is almost like the consciousness
-              of a webpage, you can target specific aspects of the html and css
-              and then force them to do different things, you can write
-              mathmatical equations, random number generators (RNG is the bane
-              of my exisitence LOL), and even take different inputs like
-              keystrokes, or button presses and get them to fire off a sequence
-              of events that start a predesigned animation.
-            </p></br>
-            <b>Control-Flow what is it?</b>
-            <p>Control-Flow is the order in which things in javascript interact, typically javascript runs from top to bottom, 
-              however you using different types of javascript code we can run certain things at anytime we chose. This is like how we have a certain order to how we go about our day
-            however different elements of what we do can change but still happen.</p></br>
-              <b>Conditional Statments</b>
-              <p>Conditional statments are things that will fire off under certain conditions (go figure), examples of this are “if… else” statements, 
-                (if) runs a part of the code and checks if that is true or false if it is false (else) will run.</p>
-                <div class="codeExample">
-                <p id="welcomeMessage"></p>
-              <button id="myButton" onclick="myFirstClick()" class="btn">Click Me</button><button id="removeButton" onclick="myFirstClick()" class="btn">Remove Text</button></br>
-            </br></br>
-              <img src="../images/ifelse.png" style="width: 60%;"></img>
+<head>
+  <title>Ezra's Blog</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+</head>
 
-              </div>
-            </br></br>
-              <b>Loops</b>
-              <p>Loops are chunks of code that run for a certain amount of loops untill a criteria is met 
-                (they can run forever but this is not optimal and can crash you pc, with no lasting damage) 
-                it has many use cases other than repeating a pice of code, it can be used to count a number of objects in an array (container)
-                 and when the max number of objects is hit it can fire of a piece of code.</p></br>
-                 <div class="codeExample">
-                  <p>for (let i = 0; i < 5; i++) {</br>
-  console.log(i);</br>
-}</p>
-                 </div>
-                 <p>this line of code would loop through and repeat itself untill it hits the number 5 and then stop.</p></br>
-              <b>What is the DOM?</b>
-              <p>The Document Object Model (or DOM for short) is an interface that allows you to view and edit the different elements of a web page, 
-                it allows you to see the html, css and also network related queries. It has a built in terminal that allows you to use java script to edit and select 
-                different parts of the web page.</p>
-              
-              <img src="../images/using_the_w3c_dom_level_1_core-doctree.jpg" style="width: 40%;" class="codeExample"></img></br></br></br>
-              <b>Why would you use the DOM?</b>
-              <p>You would use it to make quick live changes to your css and html on the go (it is not perminant and will disapear on page refresh) 
-                but allows you to play around with finding what works so you can make the changes in you code later. It also allows you to select different events 
-                that can happen on the page and target specific parts of those events to react in specific ways. It also outputs console log errors if things on the page are not working.</p></br>
-              <b>What are the main components of the DOM?</b>
-              <p>The main components consist of the html view, the computed css styles, a console to read errors and write javascript. Other elements of the DOM inclue 
-                A list of the source files, and general stats on the preformance and memory of the site.</p></br>
-              <b>What are DOM Events?</b>
-              <p>DOM events are different different interactions that can happen on a page. When you click a button an event is created, 
-                when you hover over something and it reacts, that is also an event. Writing into a text box is also an event, using the DOM you can 
-                listen to these and log them, you can also using javascript execute lines of code when an event is triggered.</p></br>
-              <b>Arrays & Objects</b>
-              <p>Arrays and objects are data that can be stored, updated and called on using javascript. Arrays are containers than can contain 
-                multiple different sets of data, they are defined using [ ] these square brackets and there positioning numbers start at 0. 
-                Objects are data values that typically are  only one but inside an object you can have other different objects.</p><div class="codeExample">
-              <img src="../images/array.png" style="width: 40%;"></br></img><p>in this array the console log would output "Flat White" as it is in position [1]</p></br></div></br></br>
-              <b>Functions</b>
-              <p>Functions are different executable chunks of code that do certain things that can be called on as many times as you want, 
-                they can ignore the control flow, but also are vital to holding data that can be used to call and run that chunk of code in the flow of execution.</p>
-          </div>
-          <div class="column right text-center">
-            <!-- <h2>column 3</h2> -->
-            <!-- <div style="background-color: black; margin-top: 50%"></div> -->
-          </div>
-        </div>
-      </div>
-      <footer>
-        <div id="foot">
-          <p>© 2025 Ezra. All rights reserved.</p>
-        </div>
-      </footer>
+<body>
+  <div class="all">
+    <div id="nav-bar">
+      <a href="/" class="btn">Home</a>
+      <a href="/blog/html-css.html" class="btn">Margins, Borders & Padding</a>
+      <a href="/blog/te-houtaewa-template.html" class="btn">Te-Houtaewa Template</a>
+      <a href="/blog/identity-values.html" class="btn">Identity & Values</a>
+      <a href="/blog/learning-plan.html" class="btn">Learning Plan</a>
+      <a href="/blog/emotional-intelligence.html" class="btn">Emotional Intelligence</a>
+      <a href="/blog/javascript-dom.html" class="btn">Javascript & DOM</a>
+      <a href="/blog/neuroplasticity.html" class="btn">Neuroplasticity</a>
+      <a href="/blog/te-whare-tapa-wha.html" class="btn">Te Whare Tapa Wha</a>
     </div>
-  </body>
+    <div class="container">
+      <div class="row">
+        <div class="column left text-center">
+          <!-- <h2>column 1</h2> -->
+          <!-- <div style="background-color: black; margin-top: 50%;"></div> -->
+        </div>
+        <div class="column middle scrollbar text-center">
+          <a href="../index.html" class="logo-btn btn-logo">
+            <div id="alt-logo">
+              <div class="logobg"></div>
+              <h4 class="center-shadow-text">Return Home</h4>
+            </div>
+          </a>
+          <h1>Javascript & the DOM</h1>
+          <b>Relationship of Javascript with HTMl and CSS</b>
+          <p>
+            The way Javascript interacts with HTML and CSS is really
+            fascinating, HTML is like the core structure of a webpage its your
+            paragraphs, your headings, and all your different containers. CSS
+            is the flesh of a webpage, it's how things look, how they are
+            styled and even how they interact with certain changes (like a
+            hover over a button). Javascript is almost like the consciousness
+            of a webpage, you can target specific aspects of the html and css
+            and then force them to do different things, you can write
+            mathmatical equations, random number generators (RNG is the bane
+            of my exisitence LOL), and even take different inputs like
+            keystrokes, or button presses and get them to fire off a sequence
+            of events that start a predesigned animation.
+          </p></br>
+          <b>Control-Flow what is it?</b>
+          <p>Control-Flow is the order in which things in javascript interact, typically javascript runs from top to
+            bottom,
+            however you using different types of javascript code we can run certain things at anytime we chose. This is
+            like how we have a certain order to how we go about our day
+            however different elements of what we do can change but still happen.</p></br>
+          <b>Conditional Statments</b>
+          <p>Conditional statments are things that will fire off under certain conditions (go figure), examples of this
+            are “if… else” statements,
+            (if) runs a part of the code and checks if that is true or false if it is false (else) will run.</p>
+          <div class="codeExample">
+            <p id="welcomeMessage"></p>
+            <button id="myButton" onclick="myFirstClick()" class="btn">Click Me</button><button id="removeButton"
+              onclick="myFirstClick()" class="btn">Remove Text</button></br>
+            </br></br>
+            <img src="../images/ifelse.png" style="width: 60%;"></img>
+
+          </div>
+          </br></br>
+          <b>Loops</b>
+          <p>Loops are chunks of code that run for a certain amount of loops untill a criteria is met
+            (they can run forever but this is not optimal and can crash you pc, with no lasting damage)
+            it has many use cases other than repeating a pice of code, it can be used to count a number of objects in an
+            array (container)
+            and when the max number of objects is hit it can fire of a piece of code.</p></br>
+          <div class="codeExample">
+            <p>for (let i = 0; i < 5; i++) {</br>
+                console.log(i);</br>
+                }</p>
+          </div>
+          <p>this line of code would loop through and repeat itself untill it hits the number 5 and then stop.</p></br>
+          <b>What is the DOM?</b>
+          <p>The Document Object Model (or DOM for short) is an interface that allows you to view and edit the different
+            elements of a web page,
+            it allows you to see the html, css and also network related queries. It has a built in terminal that allows
+            you to use java script to edit and select
+            different parts of the web page.</p>
+
+          <img src="../images/using_the_w3c_dom_level_1_core-doctree.jpg" style="width: 40%;"
+            class="codeExample"></img></br></br></br>
+          <b>Why would you use the DOM?</b>
+          <p>You would use it to make quick live changes to your css and html on the go (it is not perminant and will
+            disapear on page refresh)
+            but allows you to play around with finding what works so you can make the changes in you code later. It also
+            allows you to select different events
+            that can happen on the page and target specific parts of those events to react in specific ways. It also
+            outputs console log errors if things on the page are not working.</p></br>
+          <b>What are the main components of the DOM?</b>
+          <p>The main components consist of the html view, the computed css styles, a console to read errors and write
+            javascript. Other elements of the DOM inclue
+            A list of the source files, and general stats on the preformance and memory of the site.</p></br>
+          <b>What are DOM Events?</b>
+          <p>DOM events are different different interactions that can happen on a page. When you click a button an event
+            is created,
+            when you hover over something and it reacts, that is also an event. Writing into a text box is also an
+            event, using the DOM you can
+            listen to these and log them, you can also using javascript execute lines of code when an event is
+            triggered.</p></br>
+          <b>Arrays & Objects</b>
+          <p>Arrays and objects are data that can be stored, updated and called on using javascript. Arrays are
+            containers than can contain
+            multiple different sets of data, they are defined using [ ] these square brackets and there positioning
+            numbers start at 0.
+            Objects are data values that typically are only one but inside an object you can have other different
+            objects.</p>
+          <div class="codeExample">
+            <img src="../images/array.png" style="width: 40%;"></br></img>
+            <p>in this array the console log would output "Flat White" as it is in position [1]</p></br>
+          </div></br></br>
+          <b>Functions</b>
+          <p>Functions are different executable chunks of code that do certain things that can be called on as many
+            times as you want,
+            they can ignore the control flow, but also are vital to holding data that can be used to call and run that
+            chunk of code in the flow of execution.</p>
+        </div>
+        <div class="column right text-center">
+          <!-- <h2>column 3</h2> -->
+          <!-- <div style="background-color: black; margin-top: 50%"></div> -->
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="foot">
+        <p>© 2025 Ezra. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../scripts/scripts.js"></script>
+</body>
+
 </html>

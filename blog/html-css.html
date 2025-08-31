@@ -1,80 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ezra's Blog</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <div class="all">
-      <div id="nav-bar">
-        <a href="/" class="btn">Home</a>
-        <a href="/blog/html-css.html" class="btn">Margins, Borders & Padding</a>
-        <a href="/blog/te-houtaewa-template.html" class="btn"
-          >Te-Houtaewa Template</a
-        >
-        <a href="/blog/identity-values.html" class="btn">Identity & Values</a>
-        <a href="/blog/learning-plan.html" class="btn">Learning Plan</a>
-        <a href="/blog/emotional-intelligence.html" class="btn"
-          >Emotional Intelligence</a
-        >
-        <a href="/blog/javascript-dom.html" class="btn">Javascript & DOM</a>
-        <a href="/blog/neuroplasticity.html" class="btn">Neuroplasticity</a>
-      </div>
+
+<head>
+  <title>Ezra's Blog</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="all">
+    <div id="nav-bar">
+      <a href="/" class="btn">Home</a>
+      <a href="/blog/html-css.html" class="btn">Margins, Borders & Padding</a>
+      <a href="/blog/te-houtaewa-template.html" class="btn">Te-Houtaewa Template</a>
+      <a href="/blog/identity-values.html" class="btn">Identity & Values</a>
+      <a href="/blog/learning-plan.html" class="btn">Learning Plan</a>
+      <a href="/blog/emotional-intelligence.html" class="btn">Emotional Intelligence</a>
+      <a href="/blog/javascript-dom.html" class="btn">Javascript & DOM</a>
+      <a href="/blog/neuroplasticity.html" class="btn">Neuroplasticity</a>
+      <a href="/blog/te-whare-tapa-wha.html" class="btn">Te Whare Tapa Wha</a>
+    </div>
     <div class="container">
       <div class="row">
         <div class="column left text-center">
           <!-- <h2>column 1</h2> -->
-           <div style="background-color: black; margin-top: 50%;"></div>
+          <div style="background-color: black; margin-top: 50%;"></div>
         </div>
         <div class="column middle scrollbar text-center">
-            <a href="../index.html" class="logo-btn btn-logo"
-              ><div id="alt-logo">
-                <div class="logobg"></div>
-                <h4 class="center-shadow-text">Return Home</h4>
-              </div></a
-            >
+          <a href="../index.html" class="logo-btn btn-logo">
+            <div id="alt-logo">
+              <div class="logobg"></div>
+              <h4 class="center-shadow-text">Return Home</h4>
+            </div>
+          </a>
           <h1 class="">Margins, Borders & Padding</h1>
           <!-- <h2 class="offset">What is the difference? </h2> -->
-          <p class="">If i was to describe what each component is to someone who is not tech save i would say if all these parts were your property,
-            the margin is like the footpath around your house. the border is like your fence line. the padding is your garden, and the content is your house.
+          <p class="">If i was to describe what each component is to someone who is not tech save i would say if all
+            these parts were your property,
+            the margin is like the footpath around your house. the border is like your fence line. the padding is your
+            garden, and the content is your house.
           </p>
           <!-- <img src="/images/marginpaddingborder.png" alt="example" style="width: 30%;"></br> -->
           <b>Margin</b>
           <p>I am going to break down each of these parts individually starting from the outermost component.
-          The margin sets a space around the edge of the border as a buffer zone, it acts like an invisible force bubble. This cannot be visually styled outside of sizing of the space it takes.
-          The margin can have a blanket value or different values for all sides being top, left, bottom, and right. This value can be in different forms, px (pixel), and % are the more common uses.
-          Below is an example of the code in an inline format:</p>
-          <p style="display: inline-block;">&lt;p style="margin-left: 20%; margin-right: 20%; background-color: rgb(112, 0, 0);"&gt;this is an example of a margin&lt;/p&gt;</p>
-          <p style="margin-left: 20%; margin-right: 20%; background-color: rgb(112, 0, 0);">this is an example of a margin</p></br>
+            The margin sets a space around the edge of the border as a buffer zone, it acts like an invisible force
+            bubble. This cannot be visually styled outside of sizing of the space it takes.
+            The margin can have a blanket value or different values for all sides being top, left, bottom, and right.
+            This value can be in different forms, px (pixel), and % are the more common uses.
+            Below is an example of the code in an inline format:</p>
+          <p style="display: inline-block;">&lt;p style="margin-left: 20%; margin-right: 20%; background-color: rgb(112,
+            0, 0);"&gt;this is an example of a margin&lt;/p&gt;</p>
+          <p style="margin-left: 20%; margin-right: 20%; background-color: rgb(112, 0, 0);">this is an example of a
+            margin</p></br>
           <b>Border</b>
-          <p>The border is the outline of the "box", it is the visual representation of the outer layer of your content. you can style this in many ways.
-            An example is using a "border-radius: 50%;" to give your "box" a circle shape. you can also colour your border.
-            Like mentioned for margin, you can have different values for each side or a general blanket value, this also applies for padding.
+          <p>The border is the outline of the "box", it is the visual representation of the outer layer of your content.
+            you can style this in many ways.
+            An example is using a "border-radius: 50%;" to give your "box" a circle shape. you can also colour your
+            border.
+            Like mentioned for margin, you can have different values for each side or a general blanket value, this also
+            applies for padding.
             Below is an example of the code in an inline format:</p>
-          <p style="display: inline-block;">&lt;p style="border: 5px solid rgb(112, 0, 0);"&gt;this is an example of a border&lt;/p&gt;</p>
-          <p  style="border: 5px solid rgb(112, 0, 0);">this is an example of a border</p></br>
-        
-          <b >Padding</b>
-          <p>The padding around content is the space between the content and the border. Just like the margin, this is invisible and cannot be styled outside of its size.
+          <p style="display: inline-block;">&lt;p style="border: 5px solid rgb(112, 0, 0);"&gt;this is an example of a
+            border&lt;/p&gt;</p>
+          <p style="border: 5px solid rgb(112, 0, 0);">this is an example of a border</p></br>
+
+          <b>Padding</b>
+          <p>The padding around content is the space between the content and the border. Just like the margin, this is
+            invisible and cannot be styled outside of its size.
             Below is an example of the code in an inline format:</p>
-          <p style="display: inline-block;">&lt;p style="padding: 10px; border: 2px solid white; background-color: rgb(112, 0, 0);"&gt;this is an example of padding&lt;/p&gt;</p>
-          <p style="padding: 10px; border: 2px solid white; background-color: rgb(112, 0, 0);">this is an example of padding</p>
-          
+          <p style="display: inline-block;">&lt;p style="padding: 10px; border: 2px solid white; background-color:
+            rgb(112, 0, 0);"&gt;this is an example of padding&lt;/p&gt;</p>
+          <p style="padding: 10px; border: 2px solid white; background-color: rgb(112, 0, 0);">this is an example of
+            padding</p>
+
 
 
         </div>
         <div class="column right text-center">
           <!-- <h2>column 3</h2> -->
-           <div style="background-color: black; margin-top: 50%;"></div>
+          <div style="background-color: black; margin-top: 50%;"></div>
         </div>
       </div>
     </div>
-      <footer>
-        <div id="foot">
-          <p>© 2025 Ezra. All rights reserved.</p></div>
-      </footer>
+    <footer>
+      <div id="foot">
+        <p>© 2025 Ezra. All rights reserved.</p>
       </div>
-  </body>
+    </footer>
+  </div>
+  <script src="../scripts/scripts.js"></script>
+</body>
+
 </html>

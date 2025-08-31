@@ -51,7 +51,27 @@ function cycleColor() {
     else if (r < 255) r++
     else cycle = 0
   }
-  rgbText.style.color = `rgb(${r}, ${g}, ${b})`
+
+  if (rgbText) {
+    rgbText.style.color = `rgb(${r}, ${g}, ${b})`
+  }
 }
 
 setInterval(cycleColor, 10)
+
+// ------ Collapsible Div ------ //
+
+let coll = document.getElementsByClassName('collapsible')
+let i
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+    let content = this.nextElementSibling
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null
+    } else {
+      content.style.maxHeight = content.scrollHeight + 'px'
+    }
+  })
+}

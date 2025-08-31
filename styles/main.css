@@ -145,6 +145,51 @@ a.lnk:visited {
   text-decoration: underline;
 }
 
+/* ----------------------------------------------------------- */
+
+/* ----------------------Collapsible Div----------------------- */
+
+.collapsible {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 2px;
+  width: 100%;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collapsible:after {
+  content: '\26E7';
+  font-size: 30px;
+  color: white;
+  vertical-align: middle;
+}
+
+.active,
+.collapsible:hover {
+  background-color: rgb(51, 0, 0);
+}
+
+.active:after {
+  content: '\26E4';
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #000000;
+  transition: max-height 0.2s ease-out;
+}
+
+/* ------------------------------------------------------- */
+
+/* ------------------------RGB Text-------------------------- */
+
 #rgbText {
   font-weight: bold;
   text-align: center;
@@ -282,4 +327,29 @@ b {
   font-family: Runescape;
   font-size: 22px;
 }
+
+table {
+  width: 80%;
+  border: 5px solid rgb(112, 0, 0);
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  padding: 5px;
+  border: 1px solid rgb(112, 0, 0);
+  font-family: Runescape;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+td {
+  padding: 5px;
+  border: 1px solid rgb(112, 0, 0);
+  font-family: Runescape;
+  font-size: 18px;
+  text-align: left;
+}
+
 /* ---------------------------------------------- */
