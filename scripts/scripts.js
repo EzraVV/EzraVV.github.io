@@ -78,7 +78,7 @@ for (i = 0; i < coll.length; i++) {
 
 // ---------------- NAV BAR ---------------- //
 
-fetch('/nav.html')
+fetch('/public/nav.html')
   .then((response) => response.text())
   .then((html) => {
     const temp = document.createElement('div')
