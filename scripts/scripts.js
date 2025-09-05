@@ -78,35 +78,6 @@ for (i = 0; i < coll.length; i++) {
 
 // ---------------- NAV BAR ---------------- //
 
-// const navbar = `
-//         <div class="navbar">
-//   <a href="/">Home</a>
-//   <a href="/blog/about.html">About Me</a>
-//   <div class="dropdown">
-//     <button class="dropbtn">Dev Human Skills
-//       <i class="fa fa-caret-down"></i>
-//     </button>
-//     <div class="dropdown-content">
-//       <a href="/blog/te-houtaewa-template.html" class="btn">Te-Houtaewa Template</a>
-//       <a href="/blog/identity-values.html" class="btn">Identity & Values</a>
-//       <a href="/blog/learning-plan.html" class="btn">Learning Plan</a>
-//       <a href="/blog/emotional-intelligence.html" class="btn">Emotional Intelligence</a>
-//       <a href="/blog/neuroplasticity.html" class="btn">Neuroplasticity</a>
-//       <a href="/blog/te-whare-tapa-wha.html" class="btn">Te Whare Tapa Wha</a>
-//     </div>
-//   </div>
-//   <div class="dropdown">
-//     <button class="dropbtn">Dev Tech Skills
-//       <i class="fa fa-caret-down"></i>
-//     </button>
-//     <div class="dropdown-content">
-//       <a href="/blog/html-css.html" class="btn">Margins, Borders & Padding</a>
-//       <a href="/blog/javascript-dom.html" class="btn">Javascript & DOM</a>
-//       <a href="/blog/problem-solving.html" class="btn">Problem-Solving</a>
-//     </div>
-//   </div>
-// </div>`
-
 fetch('/nav.html')
   .then((response) => response.text())
   .then((html) => {
@@ -123,5 +94,3 @@ fetch('/nav.html')
   .catch((error) => {
     console.error('Failed to load navbar:', error)
   })
-
-// document.getElementById('navBelow').insertAdjacentHTML('afterbegin', navbar)
