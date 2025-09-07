@@ -100,10 +100,24 @@ a.btn-logo:visited {
 .left,
 .right {
   width: 25%;
-  background-image: url('../images/nuke.gif');
+  background-image: url('../images/bgImages/nuke.gif');
   background-position: center;
   background-size: cover;
 }
+
+.leftCol {
+  width: 25%;
+  background-image: url('../images/bgImages/lefttree.gif');
+  background-position: center;
+  background-size: cover;
+}
+.rightCol {
+  width: 25%;
+  background-image: url('../images/bgImages/righttree.gif');
+  background-position: center;
+  background-size: cover;
+}
+
 .middle {
   width: 50%;
   /* margin-left: 5%;

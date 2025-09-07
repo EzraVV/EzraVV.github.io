@@ -89,6 +89,23 @@ fetch('/public/nav.html')
 
     if (navbar && target) {
       target.insertAdjacentElement('afterbegin', navbar)
+
+      // --------------- BACKGROUND MUSIC ------------ //
+
+      const backgroundMusic = document.getElementById('backgroundMusic')
+      const playPauseButton = document.getElementById('playPauseButton')
+
+      if (backgroundMusic && playPauseButton) {
+        playPauseButton.addEventListener('click', () => {
+          if (backgroundMusic.paused) {
+            backgroundMusic.play()
+            playPauseButton.textContent = 'Pause Music'
+          } else {
+            backgroundMusic.pause()
+            playPauseButton.textContent = 'Play Music'
+          }
+        })
+      }
     }
   })
   .catch((error) => {
