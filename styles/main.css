@@ -439,4 +439,14 @@ td {
   text-align: left;
 }
 
+@media (max-width: 768px) {
+  .left,
+  .right {
+    display: none;
+  }
+  .middle {
+    width: 100vw;
+  }
+}
+
 /* ---------------------------------------------- */
