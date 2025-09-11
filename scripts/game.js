@@ -38,6 +38,20 @@ function clearBoard() {
   }
 }
 
+function stalemate() {
+  let res = true
+  for (let i = 0; i < cells.length; i++) {
+    if (cells[i].innerHTML.trim() === '') {
+      res = false
+    }
+  }
+
+  return res
+  // if all cells value is not ''
+  // log stalemate
+  // then clear table reset
+}
+
 function check4Win(Symbol) {
   // Horizontal //
   Symbol = symbol
@@ -92,17 +106,16 @@ function check4Win(Symbol) {
   )
     gameIsOver = true
 
+  let isStale = stalemate()
+
   if (gameIsOver) {
     winner = noughtsTurn ? 'Player 1 Won' : 'Player 2 Won'
   }
 
+  if (isStale) {
+    gameIsOver = true
+    winner = 'Stalemate'
+  }
+
   return gameIsOver
 }
-// create var for clicked cell called cell
-// if cell empty
-// based off bool naughtsTurn figutr out which symbol to put in O X
-// put symbol in
-// check to see if player won turn using check4Win
-// if game still going
-// switch player
-// update text declaring whos turn
