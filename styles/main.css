@@ -242,6 +242,25 @@ a.lnk:visited {
 
 /* ----------------------------------------------------------- */
 
+/* ----------------------TicTacToe--------------------------- */
+.ticTable {
+  margin-right: center;
+  margin-left: center;
+  margin: 0 auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: auto;
+}
+
+.ticTD {
+  width: 8vw;
+  height: 8vw;
+  text-align: center;
+  font-size: 300%;
+}
+
+/* ---------------------------------------------------------- */
+
 /* --------------------Navigation Bar Top----------------------- */
 
 .navbar {
